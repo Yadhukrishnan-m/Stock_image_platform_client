@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import IsLogout from "./protected/IsLogout";
 import IsLogin from "./protected/IsLogin";
 import  Home  from "./pages/Home";
+import NotFound from "./pages/Norfound";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
               </IsLogin>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </>
